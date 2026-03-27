@@ -1,11 +1,22 @@
 
 from contextlib import asynccontextmanager
+# async context manager is used to manage the lifecycle of the application  , it is used to start and stop the application  ,
 from datetime import datetime
+# datetime is used to get the current date and time 
 import os
+# os is used to get the environment variables
 import sys
+# sys is used to get the command line arguments,
+# it is used to run the application
+#what is command line arguments?
+# command line arguments are the arguments that are passed to the command line
+# it is used to run the application 
+
 import certifi
+# certifi is used to get the certificates
 
 from bson import ObjectId
+# ObjectId is used to get the object id
 from fastapi import FastAPI, status
 from motor.motor_asyncio import AsyncIOMotorClient
 from pydantic import BaseModel
